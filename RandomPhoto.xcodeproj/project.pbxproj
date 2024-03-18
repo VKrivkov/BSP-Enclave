@@ -445,6 +445,7 @@
 				DEVELOPMENT_TEAM = MLM4292KP3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RandomPhoto/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Your Face ID is used for secure authentication to access your account.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -473,6 +474,7 @@
 				DEVELOPMENT_TEAM = MLM4292KP3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RandomPhoto/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Your Face ID is used for secure authentication to access your account.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
