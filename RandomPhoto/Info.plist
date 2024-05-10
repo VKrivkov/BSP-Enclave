@@ -11,14 +11,14 @@
 			<key>UIWindowSceneSessionRoleApplication</key>
 			<array>
 				<dict>
+					<key>NSFaceIDUsageDescription</key>
+					<string>Your Face ID is used for secure authentication to access the signing operation.</string>
 					<key>UISceneConfigurationName</key>
 					<string>Default Configuration</string>
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
 					<string>Main</string>
-					<key>NSFaceIDUsageDescription</key>
-    				<string>Your Face ID is used for secure authentication to access the signing operation.</string>
 				</dict>
 			</array>
 		</dict>

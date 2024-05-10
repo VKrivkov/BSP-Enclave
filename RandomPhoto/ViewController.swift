@@ -2,6 +2,7 @@ import UIKit
 import Security
 import LocalAuthentication
 import CommonCrypto
+import PassKit
 
 func sha256(data: Data) -> Data {
     var hash = [UInt8](repeating: 0, count: Int(CC_SHA256_DIGEST_LENGTH))
@@ -12,6 +13,7 @@ func sha256(data: Data) -> Data {
 }
 
 class ViewController: UIViewController {
+    
     
     let inputTextField = UITextField()
     let encryptButton = UIButton()
@@ -56,6 +58,7 @@ class ViewController: UIViewController {
         ])
     }
     
+    
     @objc func encryptAction() {
         guard let randomNumber = inputTextField.text, !randomNumber.isEmpty,
               let dataToSign = randomNumber.data(using: .utf8),
@@ -76,6 +79,10 @@ class ViewController: UIViewController {
     //    attemptSecureEnclaveKeyExtraction(tag: "com.example.keys.mykey")
 
     }
+    
+    
+    
+    
     
     func deleteExistingKey(tag: String) {
         guard let tagData = tag.data(using: .utf8) else {
@@ -139,9 +146,14 @@ class ViewController: UIViewController {
                     }
             return nil
         }
-
+        
+    
+        
+        
         return privateKey
     }
+    
+    
     
     func signData(privateKey: SecKey, data: Data) -> Data? {
         let digest = sha256(data: data)
@@ -159,10 +171,8 @@ class ViewController: UIViewController {
     }
     
 
-    
-    
-    }
+   }
 
-
+    
 
 
